@@ -8,4 +8,10 @@
 
 <ion-content padding>
 
+  <ion-item >
+    <ion-label floating>Name :</ion-label>
+    <ion-input type="text" [(ngModel)]="personName"></ion-input>
+  </ion-item>
+  <button ion-button color ="secondary" full (click)="showGreething(personName)">Show Greeting</button>
+
 </ion-content>
